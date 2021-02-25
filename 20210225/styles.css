@@ -1,0 +1,29 @@
+body {
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.main_content {
+    width: 50%;
+    /* background-color: blue; */
+    height: 98%;
+    margin: auto;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.main_content * {
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    text-align: center;
+}
+.form {
+    text-align: center;
+}
