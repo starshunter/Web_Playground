@@ -1,0 +1,52 @@
+body {
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.main_content {
+    width: 50%;
+    /* background-color: blue; */
+    height: 98%;
+    margin: auto;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    /* background-color: blue; */
+}
+
+.main_content * {
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    text-align: center;
+}
+.form {
+    text-align: center;
+}
+
+.respond {
+    text-align: center;
+}
+
+.query_item {
+    width: 100%;
+    /* height: 50px; */
+    background-color: rgb(243, 243, 243);
+    border-left: none;
+    border-right: none;
+    margin-top: -2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.btn_text {
+    font-size: 20px;
+    text-align: center;
+}
