@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { //如果是 POST 請求
                 die("連線失敗" .$connect->connect_error);
             }
             $connect->query("SET NAMES 'utf8'");
-            $querySql = "SELECT actor_id, first_name, last_name FROM sakila.actor WHERE first_name='{$name}' OR last_name='{$name}'";
+            $querySql = "SELECT actor_id, first_name, last_name FROM sakila.actor WHERE first_name='{$name}'";
             $response = $connect->query($querySql);
 
             $users = [];
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") { //如果是 POST 請求
                     $first_name = $row["first_name"];
                     $last_name = $row["last_name"];
                     $full_name = $first_name . ' ' . $last_name;
-                    array_push($users, array('full_name' => $full_name, 'id' => $actor_id));
+                    array_push($users, array('first_name' => $first_name, 'id' => $actor_id));
                 }
             }
 

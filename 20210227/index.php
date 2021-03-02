@@ -10,12 +10,21 @@
         <div class="main_content">
             <div class="form">
                 <form id="demo">
-                    暱稱：<input type="text" id="name">
-                    <button type="button" id="submitExample">執行範例</button>
+                    <input type="text" id="name"    >
+                    <button type="button" id="submit">Search</button>
                 </form>
             </div>
+            <div id="result_header">
+                <div class="header"><p>Orders</p></div>
+                <div class="columns">
+                    <p>ID</p>
+                    <p>Customer</p>
+                </div>
+            </div>
             <div class="respond">
-                <p id="result"></p> <!-- 顯示回傳資料 -->
+                <form action="./second.php" method="POST">
+                    <p id="result"></p>
+                </form>
             </div>
         </div>
     </body>
